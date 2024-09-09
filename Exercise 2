@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+
+
+
+int main(){
+	float x=0,y=0;
+	
+	cout << "enter x:"; cin >> x;
+	cout << "enter y:"; cin >> y;
+	int sum = x+y;
+	int diff = x-y;
+	int product = x*y;
+	float quotient = x/y;
+	
+
+	cout <<"Answer." << endl;
+	cout << "Sum is :" << sum << endl;
+	cout << "Difference is :" << diff << endl;
+	cout << "Product is :" << product << endl;
+	cout << "Quotient is :" << quotient << endl;
+	
+	return 0;
+	
+}
+
+
+
+
