@@ -3,7 +3,7 @@
 #include <ctype.h>
 using namespace std;
 
-int isItLowercase(char a)
+void isItLowercase(char a)
 {
     if (islower(a))
     {
@@ -15,7 +15,7 @@ int isItLowercase(char a)
     }
 }
 
-int isItUppercase(char a)
+void isItUppercase(char a)
 {
     if (isupper(a))
     {
@@ -27,7 +27,7 @@ int isItUppercase(char a)
     }
 }
 
-int toToLower(char a)
+void toToLower(char a)
 {
     if (isupper(a))
     {
@@ -36,7 +36,7 @@ int toToLower(char a)
     }
 }
 
-int toToUpper(char a)
+void toToUpper(char a)
 {
     if (islower(a))
     {
@@ -45,7 +45,7 @@ int toToUpper(char a)
     }
 }
 
-int isBlank(char a)
+void isBlank(char a)
 {
     if (isblank(a))
     {
@@ -57,7 +57,7 @@ int isBlank(char a)
     }
 }
 
-int isDigit(char a)
+void isDigit(char a)
 {
     if (isdigit(a))
     {
@@ -69,7 +69,7 @@ int isDigit(char a)
     }
 }
 
-int isALpha(char a)
+void isALpha(char a)
 {
     if (isalpha(a))
     {
@@ -81,7 +81,7 @@ int isALpha(char a)
     }
 }
 
-int isAlNum(char a)
+void isAlNum(char a)
 {
     if (isalnum(a))
     {
@@ -93,4 +93,22 @@ int isAlNum(char a)
     }
 }
 
+int main()
+{
+    char a;
+
+    cout << "Enter a character: ";
+    cin >> a;
+
+    isItLowercase(a);
+    isItUppercase(a);
+    toToLower(a);
+    toToUpper(a);
+    isBlank(a);
+    isDigit(a);
+    isALpha(a);
+    isAlNum(a);
+
+    return 0;
+}
 
